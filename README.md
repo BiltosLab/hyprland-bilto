@@ -1,7 +1,7 @@
 # hyprland-bilto
 My hyprland dots + configuration from base arch install
 
-![Screenshot](https://github.com/ChrisTitusTech/hyprland-titus/raw/main/hyprland-titus.png)
+![Screenshot](https://github.com/Biltosgit/hyprland-bilto/screenshot.png)
 
 ## Installation Guide
 
