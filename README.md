@@ -3,35 +3,8 @@ My hyprland dots + configuration from base arch install
 
 ![Screenshot](https://github.com/ChrisTitusTech/hyprland-titus/raw/main/hyprland-titus.png)
 
-## Install
-
-### Yay
-
-Run as user NOT ROOT!
-
-```
-# Before this you need base-devel installed
-git clone https://aur.archlinux.org/yay-bin
-cd yay-bin
-makepkg -si
-```
-
-### Packages
-
-``` bash
-yay -S hyprland-bin polkit-gnome ffmpeg neovim viewnior       \
-rofi pavucontrol thunar starship wl-clipboard wf-recorder     \
-swaybg grimblast-git ffmpegthumbnailer tumbler playerctl      \
-noise-suppression-for-voice thunar-archive-plugin kitty       \
-waybar-hyprland wlogout swaylock-effects sddm-git pamixer     \
-nwg-look-bin nordic-theme papirus-icon-theme dunst otf-sora   \
-ttf-nerd-fonts-symbols-common otf-firamono-nerd inter-font    \
-ttf-fantasque-nerd noto-fonts noto-fonts-emoji ttf-comfortaa  \
-ttf-jetbrains-mono-nerd ttf-icomoon-feather ttf-iosevka-nerd  \
-adobe-source-code-pro-fonts
-```
-
 ## Installation Guide
+
 
 Install base arch using archinstall with minimal profile
 
@@ -46,6 +19,35 @@ Add these for Nvidia GPUs
 Add these for AMD GPUs
 
 ```xf86-video-amdgpu mesa```
+
+### AUR Helper
+
+## Yay
+Run as user NOT ROOT!
+
+```
+pacman -S --needed base-devel
+git clone https://aur.archlinux.org/yay-bin
+cd yay-bin
+makepkg -si
+```
+## Paru
+
+```
+pacman -S --needed base-devel
+git clone https://aur.archlinux.org/paru-bin
+cd paru
+makepkg -si
+```
+
+### Clone
+
+
+```bash
+git clone https://github.com/Biltosgit/hyprland-bilto
+cd hyprland-bilto
+./set-hyprYay.sh #Use set-hyprParu.sh if you're using paru
+```
 
 ## Nvidia Guide
 
