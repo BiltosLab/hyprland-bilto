@@ -71,12 +71,11 @@ WLR_NO_HARDWARE_CURSORS=1
 ```
 Using ```sudo nano /etc/environment```
 
-## Gotchas
+## Notes/Warnings
 
-- Recommend archinstall with Sway as desktop for base if you're having issues with minimal profile
-- SDDM-GIT is required or you will run into shutdown bugs and delays
+- If archinstall with minimal profile doesnt work for you i recommend trying Desktop with Sway as base.
 - SDDM needs to be configured for autologin (recommend using swaylock on start of script for security)
-- Im new to linux,the nvidia guide is how i personally made my setup work it may not work for you!
+- Im new to linux, the nvidia guide is how i personally made my setup work it might have some unnecessary or missing stuff and it may not work for you  
 
 ## Work In Progress
 
@@ -91,6 +90,6 @@ Using ```sudo nano /etc/environment```
 ## Sources used making these
 
 - Official Hyprland Github <https://github.com/hyprwm/Hyprland>
-- Linux Mobiles Hyprland dot files <https://github.com/linuxmobile/hyprland-dots>
+- Linux Mobile's Hyprland dot files <https://github.com/linuxmobile/hyprland-dots>
 - ChrisTitusTech's Hyprland dot files <https://github.com/ChrisTitusTech/hyprland-titus>
-- JaKooLit's Youtube video for setting up nvidia on a laptop<https://www.youtube.com/@ja.koolit2819>
+- JaKooLit's Youtube video for setting up Nvidia and Hyprland on a laptop <https://www.youtube.com/@ja.koolit2819>
