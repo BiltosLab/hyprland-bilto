@@ -19,7 +19,7 @@ read -n1 -rep 'Do you have an nvidia card ? (y,n)' NVD
 if [[ $NVD == "Y" || $NVD == "y" ]]; then
     yay -S --noconfirm hyprland-nvidia
 else
-     yay -S --noconfirm hyprland-bin
+     yay -S --noconfirm hyprland
 fi
 ### Install all of the above packages ####
 read -n1 -rep 'Would you like to install the packages? (y,n)' INST
