@@ -24,7 +24,7 @@ fi
 ### Install all of the above packages ####
 read -n1 -rep 'Would you like to install the packages? (y,n)' INST
 if [[ $INST == "Y" || $INST == "y" ]]; then
-    paru -S --noconfirm xdg-desktop-portal-hyprland-git
+    paru -S --noconfirm xdg-desktop-portal-hyprland
     check_command_status "paru -S xdg-desktop-portal-hyprland-git"
     paru -R --noconfirm swaylock waybar
     paru -S --noconfirm wlogout-git
