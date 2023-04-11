@@ -17,7 +17,7 @@ yay -Syu
 ### Check Nvidia card ####
 read -n1 -rep 'Do you have an nvidia card ? (y,n)' NVD
 if [[ $NVD == "Y" || $NVD == "y" ]]; then
-    yay -S --noconfirm hyprland-nvidia-git
+    yay -S --noconfirm hyprland-nvidia
 else
      yay -S --noconfirm hyprland-bin
 fi
