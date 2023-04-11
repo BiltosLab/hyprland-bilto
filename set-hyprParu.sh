@@ -17,11 +17,11 @@ paru -Syu
 ### Check Nvidia card ####
 read -n1 -rep 'Do you have an nvidia card ? (y,n)' NVD
 if [[ $NVD == "Y" || $NVD == "y" ]]; then
-    paru -S --noconfirm hyprland-nvidia-git
+    paru -S --noconfirm hyprland-nvidia
 else
      paru -S --noconfirm hyprland-bin
 fi
-### Install all of the above pacakges ####
+### Install all of the above packages ####
 read -n1 -rep 'Would you like to install the packages? (y,n)' INST
 if [[ $INST == "Y" || $INST == "y" ]]; then
     paru -S --noconfirm xdg-desktop-portal-hyprland-git
