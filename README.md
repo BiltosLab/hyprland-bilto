@@ -20,9 +20,9 @@ Add these for AMD GPUs
 
 ```xf86-video-amdgpu mesa```
 
-### AUR Helper
+## AUR Helper
 
-## Yay
+### Yay
 Run as user NOT ROOT!
 
 ```
@@ -31,7 +31,7 @@ git clone https://aur.archlinux.org/yay-bin
 cd yay-bin
 makepkg -si
 ```
-## Paru
+### Paru
 
 ```
 pacman -S --needed base-devel
@@ -40,7 +40,7 @@ cd paru
 makepkg -si
 ```
 
-### Clone
+## Clone
 
 
 ```bash
