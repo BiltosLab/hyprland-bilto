@@ -55,9 +55,9 @@ In ```/etc/mkinitcpio.conf```Add ```nvidia nvidia_modeset nvidia_uvm nvidia_drm`
 
 Run ```sudo mkinitcpio -P linux```
 
-add these kernel parameters ```nvidia_drm.modeset=1 rd.driver.blacklist=nouveau modprob.blacklist=nouveau```
+Edit ```/boot/loader/entries/arch.conf``` and add the kernel parameters to the options line(Assuming you have Systemd-boot, for grub refer to the **[arch wiki](https://wiki.archlinux.org/title/kernel_parameters)**):
 
-Run ```sudo kernelstub -o "nvidia_drm.modeset=1 rd.driver.blacklist=nouveau modprob.blacklist=nouveau"``` 
+```nvidia_drm.modeset=1 rd.driver.blacklist=nouveau modprob.blacklist=nouveau```
 
 add a new line to```/etc/modprobe.d/nvidia.conf```(make it if it does not exist) and add the line```options nvidia-drm modeset=1 ```
 
