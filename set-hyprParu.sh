@@ -19,7 +19,7 @@ read -n1 -rep 'Do you have an nvidia card ? (y,n)' NVD
 if [[ $NVD == "Y" || $NVD == "y" ]]; then
     paru -S --noconfirm hyprland-nvidia
 else
-     paru -S --noconfirm hyprland-bin
+     paru -S --noconfirm hyprland
 fi
 ### Install all of the above packages ####
 read -n1 -rep 'Would you like to install the packages? (y,n)' INST
@@ -27,7 +27,7 @@ if [[ $INST == "Y" || $INST == "y" ]]; then
     paru -S --noconfirm xdg-desktop-portal-hyprland-git
     check_command_status "paru -S xdg-desktop-portal-hyprland-git"
     paru -R --noconfirm swaylock waybar
-    paru -S --noconfirm wlogout
+    paru -S --noconfirm wlogout-git
     paru -S --noconfirm polkit-gnome ffmpeg neovim viewnior rofi pavucontrol thunar starship wl-clipboard wf-recorder swaybg grimblast-git ffmpegthumbnailer tumbler playerctl noise-suppression-for-voice thunar-archive-plugin kitty waybar-hyprland-git swaylock-effects sddm-git pamixer nwg-look-bin nordic-theme papirus-icon-theme dunst otf-sora ttf-nerd-fonts-symbols-common otf-firamono-nerd inter-font ttf-fantasque-nerd noto-fonts noto-fonts-emoji ttf-comfortaa ttf-jetbrains-mono-nerd ttf-icomoon-feather ttf-iosevka-nerd adobe-source-code-pro-fonts ttf-amiri ttf-arabeyes-fonts ttf-qurancomplex-fonts ttf-sil-lateef ttf-sil-scheherazade brave-bin
      # Clean out other portals
      
