@@ -6,8 +6,7 @@ yay -S hyprland eww-wayland ttf-ubuntu-nerd socat jq acpi inotify-tools\
   wl-gammactl wlsunset wl-clipboard hyprpicker hyprshot blueberry \
   polkit-gnome
 
-git clone https://github.com/Aylur/dotfiles.git
-
+git clone -b eww --single-branch https://github.com/Aylur/dotfiles.git
 
 cp -r dotfiles/.config/eww ~/.config/eww
 cp -r dotfiles/.config/hypr ~/.config/hypr
